@@ -1,4 +1,3 @@
-#pragma once
 #include <iostream>
 #include <string>
 #include <map>
@@ -8,13 +7,18 @@ using namespace std;
 class Unit
 {
 private:
-	string type;
-	int id;
-	string name;
-	vector<Weapon>weapons;
-	map<string, int>properties;
+    string type;
+    int id;
+    string name;
+    vector<Weapon>weapons;
+    map<string, int>properties;
 public:
-	Unit(int id);
+    Unit() {
+        id = 1;
+    }
+    Unit(int id) {
+        this->id = id;
+    }
     string getType()
     {
         return type;
@@ -44,13 +48,14 @@ public:
         return id;
     }
 
-    void addWeapon(Weapon weapon) {
-        weapons.push_back(weapon);
+    void addWeapon(vector<Weapon> weapon) {
+        if (weapon.size() == 0)return;
+        this->weapons = weapon;
     }
 
     void setProperty(string property, int value)
     {
-        properties[property]= value;
+        properties[property] = value;
     }
 
     int getProperty(string property) {

@@ -129,14 +129,13 @@
   <ItemGroup>
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="GameFrameWork.cpp" />
-    <ClCompile Include="Tile.cpp" />
-    <ClCompile Include="Unit.cpp" />
-    <ClCompile Include="Weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Board.h" />
     <ClInclude Include="Tile.h" />
     <ClInclude Include="Unit.h" />
+    <ClInclude Include="UnitGroup.h" />
+    <ClInclude Include="UnitTester.h" />
     <ClInclude Include="Weapon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

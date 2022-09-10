@@ -1,10 +1,10 @@
-// GameFrameWork.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+#include "UnitTester.h"
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!\n";
+    UnitTester testUnit;
+    int i = testUnit.mainTest();
+    return 0;
 }

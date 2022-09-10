@@ -2,10 +2,18 @@
 class Tile
 {
 private:
-	Unit u;
+	Unit unit;
 public:
-	void addUnit(Unit u);
-	void removeUnit(Unit u);
-	void removeAllUnits();
-	Unit getUnit();
+	void addUnit(Unit u) {
+		unit = u;
+	}
+	void removeUnit(Unit u) {
+		return;
+	}
+	void removeAllUnits() {
+		return;
+	}
+	Unit getUnit() {
+		return unit;
+	}
 };
